@@ -1,0 +1,102 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+
+#ai_chatbot body, 
+#ai_chatbot input, 
+#ai_chatbot select, 
+#ai_chatbot textarea {
+    color: #585858;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+#ai_chatbot {
+    z-index: 9999;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 600px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    color: #585858;
+}
+
+#ai_chatbot #ai_messages {
+    height: 80%;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+#ai_chatbot #ai_input_container {
+    position: relative;
+    width: 100%;
+    border: #585858 1px solid;
+    border-radius: 3px;
+    z-index: 9999;
+}
+
+#ai_chatbot #ai_input {
+    width: 85%;
+    box-sizing: border-box;
+    z-index: 9999;    
+}
+
+#ai_chatbot #ai_send {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    border: none;
+    background: none;
+    font-size: 1.2em;
+}
+
+.ai_send_button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white !important;
+    outline: none;
+    background: none !important;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 40px;
+    padding: 0;
+    color: #585858;
+}
+
+#ai_chatbot_title {
+    padding: 1px;
+    font-size: 1.2em;
+    border-bottom: 1px solid #050404;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, button:hover, .button:hover {
+    color: #520f58 !important;
+    z-index: 9999;
+    box-shadow: none;
+}
+
+input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active, button:active, .button:active {
+    background-color: rgba(242, 132, 158, 0.1);
+    z-index: 9999;
+}
+
+input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"].disabled, input[type="reset"]:disabled, input[type="button"].disabled, input[type="button"]:disabled, button.disabled, button:disabled, .button.disabled, .button:disabled {
+    pointer-events: none;
+    opacity: 0.25;
+}
+
+#ai_chatbot #ai_minimize {
+    z-index: 9999; /* Add this line */
+    color: #585858;
+    
+}
